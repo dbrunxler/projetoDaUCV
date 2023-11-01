@@ -68,8 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="lib\css\base.css" />
+    <Content Include="lib\css\dashboard.css" />
     <Content Include="lib\css\home.css" />
     <Content Include="lib\img\janko-ferlic-sfL_QOnmy00-unsplash.jpg" />
+    <Content Include="view\Coisas.aspx" />
     <Content Include="view\Dashboard.aspx" />
     <Content Include="view\Home.aspx" />
     <Content Include="view\Login.aspx" />
@@ -86,6 +88,13 @@
       <DependentUpon>Base.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="view\Coisas.aspx.cs">
+      <DependentUpon>Coisas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\Coisas.aspx.designer.cs">
+      <DependentUpon>Coisas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="view\Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

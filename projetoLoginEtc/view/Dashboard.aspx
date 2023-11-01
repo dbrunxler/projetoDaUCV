@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <link href="../lib/css/dashboard.css" rel="stylesheet"/>
     <h1>Dashboard</h1>
     <h2>Bem-vindo(a) <asp:Label ID="lblUsuario" runat="server" Text=" "></asp:Label>!</h2>
     <table>
@@ -35,4 +36,6 @@
     </table>
     <br />
     <asp:GridView ID="grvUsuario" runat="server"></asp:GridView>
+    <br />
+    <h3>Quer ver uma parada maneira? Clique <a href="Coisas.aspx">aqui</a>!</h3>
 </asp:Content>
