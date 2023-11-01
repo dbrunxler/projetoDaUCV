@@ -20,7 +20,7 @@ namespace projetoLoginEtc.view
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            con.ConnectionString = "";
+            con.ConnectionString = "Data Source=36DE250025\\SENAC;Initial Catalog=login;Integrated Security=True";
             con.Open();
 
             ObterRequisicaoCookie();
@@ -73,7 +73,7 @@ namespace projetoLoginEtc.view
             con.Open();
 
             dt = new DataTable();
-            cmd.CommandText = "UPDATE usuarios SET nome='"+txbNome.Text.ToString()+"', sobrenome='"+txbSobrenome.Text.ToString()+"', idade='"+txbIdade.Text.ToString()+"', email='"+txbEmail.Text.ToString()+"', senha='"+txbSenha.Text.ToString()+"' WHERE id_user='"+id_user+"'";
+            cmd.CommandText = "UPDATE usuarios SET nome='"+txbNome.Text.ToString()+"', sobrenome='"+txbSobrenome.Text.ToString()+"', idade='"+Convert.ToInt32(txbIdade.Text)+ "', email='"+txbEmail.Text.ToString()+"', senha='"+txbSenha.Text.ToString()+"' WHERE id_user='"+id_user+"'";
             cmd.Connection = con;
             cmd.ExecuteNonQuery();
             dataShow();

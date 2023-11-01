@@ -19,7 +19,7 @@ namespace projetoLoginEtc.view
         DataSet ds = new DataSet();
         protected void Page_Load(object sender, EventArgs e)
         {
-            con.ConnectionString = "";
+            con.ConnectionString = "Data Source=36DE250025\\SENAC;Initial Catalog=login;Integrated Security=True";
             con.Open();
 
             if (!Page.IsPostBack)
@@ -30,7 +30,7 @@ namespace projetoLoginEtc.view
         protected void btnRegistro_Click(object sender, EventArgs e)
         {
             dt = new DataTable();
-            cmd.CommandText = "INSERT INTO usuarios(nome, sobrenome, idade, email, senha)VALUES('" + txbNome.Text.ToString() + "', '" + txbSobrenome.Text.ToString() + "', '" + txbIdade.Text.ToString() + "', '" + txbEmail.Text.ToString() + "', '" + txbSenha.Text.ToString() + "')";
+            cmd.CommandText = "INSERT INTO usuarios(nome, sobrenome, idade, email, senha)VALUES('" + txbNome.Text.ToString() + "', '" + txbSobrenome.Text.ToString() + "', '" + Convert.ToInt32(txbIdade.Text) + "', '" + txbEmail.Text.ToString() + "', '" + txbSenha.Text.ToString() + "')";
             cmd.Connection = con;
             cmd.ExecuteNonQuery();
             dataShowUser();

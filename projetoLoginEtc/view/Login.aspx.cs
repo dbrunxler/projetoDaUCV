@@ -19,7 +19,7 @@ namespace projetoLoginEtc.view
         DataSet ds = new DataSet();
         protected void Page_Load(object sender, EventArgs e)
         {
-            con.ConnectionString = "";
+            con.ConnectionString = "Data Source=36DE250025\\SENAC;Initial Catalog=login;Integrated Security=True";
             con.Open();
 
             if (!Page.IsPostBack)

@@ -17,7 +17,7 @@
             <a href="../view/Login.aspx">Login</a>
             <a href="../view/Registro.aspx">Registre-se!</a>
             <a href="../view/Dashboard.aspx">Dashboard</a>
-            <a href="../view/Dashboard.aspx">Logout</a>
+            <a href="../view/Logout.aspx">Logout</a>
         </nav>
         <div class="main">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
