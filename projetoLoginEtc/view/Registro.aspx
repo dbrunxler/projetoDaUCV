@@ -26,7 +26,9 @@
         </tr>
         <tr>
             <td></td>
-            <td><asp:Button ID="btnRegistro" runat="server" Text="Registra-se" /></td>
+            <td><asp:Button ID="btnRegistro" runat="server" Text="Registra-se" OnClick="btnRegistro_Click" /></td>
         </tr>
     </table>
+    <br />
+    <asp:GridView ID="grvUsuarios" runat="server"></asp:GridView>
 </asp:Content>

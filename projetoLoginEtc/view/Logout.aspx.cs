@@ -11,7 +11,10 @@ namespace projetoLoginEtc.view
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Response.Cookies["id_user"].Expires = DateTime.Now.AddDays(-1);
+            Response.Cookies["email"].Expires = DateTime.Now.AddDays(-1);
 
+            Response.Redirect("../view/Login.aspx");
         }
     }
 }

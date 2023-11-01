@@ -3,6 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Faça o seu login:</h1>
+    <asp:Label ID="lblMensagem" runat="server" Text=" "></asp:Label>
     <table>
         <tr>
             <td>E-mail:</td>
@@ -14,7 +15,7 @@
         </tr>
         <tr>
             <td></td>
-            <td><asp:Button ID="btnLogin" runat="server" Text="Login"/></td>
+            <td><asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click"/></td>
         </tr>
     </table>
 </asp:Content>
