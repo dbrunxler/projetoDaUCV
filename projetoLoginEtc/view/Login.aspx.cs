@@ -59,7 +59,7 @@ namespace projetoLoginEtc.view
             }
             else
             {
-                Response.Write("<script> alert('Email e/ou Senha incorretos!');</script>").
+                Response.Write("<script> alert('Email e/ou Senha incorretos!');</script>");
                 lblMensagem.Text = "Email e/ou Senha incorretos!";
             }
         }

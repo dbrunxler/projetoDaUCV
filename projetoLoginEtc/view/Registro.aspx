@@ -13,12 +13,12 @@
             <td><asp:TextBox ID="txbSobrenome" runat="server"></asp:TextBox></td>
         </tr>
         <tr>
-            <td>E-mail:</td>
-            <td><asp:TextBox ID="txbEmail" runat="server"></asp:TextBox></td>
-        </tr>
-        <tr>
             <td>Idade:</td>
             <td><asp:TextBox ID="txbIdade" runat="server"></asp:TextBox></td>
+        </tr>
+        <tr>
+            <td>E-mail:</td>
+            <td><asp:TextBox ID="txbEmail" runat="server"></asp:TextBox></td>
         </tr>
         <tr>
             <td>Senha:</td>

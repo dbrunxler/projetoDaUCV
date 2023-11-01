@@ -33,15 +33,6 @@ namespace projetoLoginEtc.view
         protected global::System.Web.UI.WebControls.TextBox txbSobrenome;
 
         /// <summary>
-        /// Controle txbEmail.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txbEmail;
-
-        /// <summary>
         /// Controle txbIdade.
         /// </summary>
         /// <remarks>
@@ -49,6 +40,15 @@ namespace projetoLoginEtc.view
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txbIdade;
+
+        /// <summary>
+        /// Controle txbEmail.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txbEmail;
 
         /// <summary>
         /// Controle txbSenha.
