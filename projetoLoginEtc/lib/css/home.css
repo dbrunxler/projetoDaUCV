@@ -1,0 +1,13 @@
+﻿body {
+}
+
+h1 {
+    text-align:center;
+}
+
+.parte_texto img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:40%;
+}

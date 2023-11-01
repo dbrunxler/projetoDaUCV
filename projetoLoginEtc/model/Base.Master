@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Base.master.cs" Inherits="projetoLoginEtc.model.Base" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="../lib/css/base.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="topnav">
+            <a href="../view/Home.aspx">Home</a>
+            <a href="../view/Login.aspx">Login</a>
+            <a href="../view/Registro.aspx">Registre-se!</a>
+            <a href="../view/Dashboard.aspx">Dashboard</a>
+            <a href="../view/Dashboard.aspx">Logout</a>
+        </nav>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer class="footer">
+            <p>Projeto simples feito por David Soares.<br />
+            Github: <a href="https://github.com/dbrunxler" target="_blank">@dbrunxler</a>
+            </p>
+        </footer>
+    </form>
+</body>
+</html>
