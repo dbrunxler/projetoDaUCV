@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="lib\css\base.css" />
+    <Content Include="lib\css\coisas.css" />
     <Content Include="lib\css\dashboard.css" />
     <Content Include="lib\css\home.css" />
     <Content Include="lib\img\janko-ferlic-sfL_QOnmy00-unsplash.jpg" />

@@ -27,28 +27,80 @@ namespace projetoLoginEtc.view
 
             if (div >= 0 && div < 6)
             {
-                lblResultado.Text = $"O resultado deu {Convert.ToString(div)}";
-                lstCalcMedias.Items.Add($"REPROVADO com {Convert.ToString(div)}");
+                lblResultado.Text = $"O resultado deu {Convert.ToString(div)}.";
+                lstCalcMedias.Items.Add($"REPROVADO com {Convert.ToString(div)}!");
             }
             else if (div >= 6 && div < 7)
             {
-                lblResultado.Text = $"O resultado deu {Convert.ToString(div)}";
-                lstCalcMedias.Items.Add($"Aprovado com {Convert.ToString(div)}");
+                lblResultado.Text = $"O resultado deu {Convert.ToString(div)}.";
+                lstCalcMedias.Items.Add($"Aprovado com {Convert.ToString(div)}!");
             }
             else if (div >= 7 && div < 9)
             {
-                lblResultado.Text = $"O resultado deu {Convert.ToString(div)}";
-                lstCalcMedias.Items.Add($"BEM Aprovado com {Convert.ToString(div)}");
+                lblResultado.Text = $"O resultado deu {Convert.ToString(div)}.";
+                lstCalcMedias.Items.Add($"BEM Aprovado com {Convert.ToString(div)}!");
             }
             else if (div >= 9 && div <= 10)
             {
-                lblResultado.Text = $"O resultado deu {Convert.ToString(div)}";
-                lstCalcMedias.Items.Add($"MUITO Aprovado com {Convert.ToString(div)}");
+                lblResultado.Text = $"O resultado deu {Convert.ToString(div)}.";
+                lstCalcMedias.Items.Add($"MUITO Aprovado com {Convert.ToString(div)}!");
             }
             else
             {
                 lblResultado.Text = "Deu algum problema aí?!";
             }
+        }
+
+        protected void btnSomar_Click(object sender, EventArgs e)
+        {
+            double n1, n2, som;
+
+            n1 = Convert.ToInt32(txbPrNum.Text);
+            n2 = Convert.ToInt32(txbSeNum.Text);
+
+            som = n1 + n2;
+
+            lblCalculos.Text = $"O resultado da sua soma deu {Convert.ToString(som)}.";
+            lstCalculos.Items.Add($"Soma: {Convert.ToString(n1)} + {Convert.ToString(n2)} = {Convert.ToString(som)}");
+        }
+
+        protected void btnSubtrair_Click(object sender, EventArgs e)
+        {
+            double n1, n2, sub;
+
+            n1 = Convert.ToInt32(txbPrNum.Text);
+            n2 = Convert.ToInt32(txbSeNum.Text);
+
+            sub = n1 - n2;
+
+            lblCalculos.Text = $"O resultado da sua subtração deu {Convert.ToString(sub)}.";
+            lstCalculos.Items.Add($"Subtração: {Convert.ToString(n1)} - {Convert.ToString(n2)} = {Convert.ToString(sub)}");
+        }
+
+        protected void btnMultiplicar_Click(object sender, EventArgs e)
+        {
+            double n1, n2, mult;
+
+            n1 = Convert.ToInt32(txbPrNum.Text);
+            n2 = Convert.ToInt32(txbSeNum.Text);
+
+            mult = n1 * n2;
+
+            lblCalculos.Text = $"O resultado da sua multiplicação deu {Convert.ToString(mult)}.";
+            lstCalculos.Items.Add($"Multiplicação: {Convert.ToString(n1)} x {Convert.ToString(n2)} = {Convert.ToString(mult)}");
+        }
+
+        protected void btnDividir_Click(object sender, EventArgs e)
+        {
+            double n1, n2, div;
+
+            n1 = Convert.ToInt32(txbPrNum.Text);
+            n2 = Convert.ToInt32(txbSeNum.Text);
+
+            div = n1 / n2;
+
+            lblCalculos.Text = $"O resultado da sua divisão deu {Convert.ToString(div)}.";
+            lstCalculos.Items.Add($"Soma: {Convert.ToString(n1)} / {Convert.ToString(n2)} = {Convert.ToString(div)}");
         }
     }
 }
